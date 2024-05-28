@@ -1,8 +1,6 @@
 package polimorfismo;
 
 
-import java.util.Date;
-
 public class OutsourceEmployee extends Employe {
 
     //Atributos
