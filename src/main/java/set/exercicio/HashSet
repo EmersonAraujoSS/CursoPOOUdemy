@@ -1,0 +1,5 @@
+
+Porque eu usei o HashSet no meu programa:
+
+- porque ele é o mais rápido de todos e não importa a ordem
+- nesse meu programa, ele serviu para eu ler o log de acessos a partir de um arquivo, e daí informe quantos usuários distintos acessaram o site.
