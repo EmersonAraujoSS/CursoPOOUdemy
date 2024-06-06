@@ -46,7 +46,7 @@ public class application {
                     bw.newLine();
                 }
 
-                System.out.println(targetFileStr + " CREATED");
+                System.out.println(targetFileStr);
 
             }catch (IOException e){
                 System.out.println("Error writing file: " + e.getMessage());;
