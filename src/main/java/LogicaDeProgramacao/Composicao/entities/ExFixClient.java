@@ -1,5 +1,6 @@
 package LogicaDeProgramacao.Composicao.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ExFixClient {
@@ -9,6 +10,7 @@ public class ExFixClient {
     private String email;
     private Date birthDate;
 
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     //CONSTRUTOR
     public ExFixClient(){
@@ -39,5 +41,10 @@ public class ExFixClient {
     }
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
+    }
+
+    @Override
+    public String toString() {
+        return name + "(" + sdf.format(birthDate) + ")- " + email;
     }
 }

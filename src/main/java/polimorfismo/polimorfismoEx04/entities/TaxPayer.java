@@ -1,4 +1,4 @@
-package polimorfismoEx04.entities;
+package polimorfismo.polimorfismoEx04.entities;
 
 public abstract class TaxPayer { //Taxa de contribuicao
 

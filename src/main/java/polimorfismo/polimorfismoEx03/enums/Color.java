@@ -1,4 +1,4 @@
-package polimorfismoEx03.enums;
+package polimorfismo.polimorfismoEx03.enums;
 
 public enum Color {
 

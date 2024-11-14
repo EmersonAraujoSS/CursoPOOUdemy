@@ -1,9 +1,6 @@
 package LogicaDeProgramacao.Composicao.application;
 
-import LogicaDeProgramacao.Composicao.entities.ExFixClient;
-import LogicaDeProgramacao.Composicao.entities.ExFixOrder;
-import LogicaDeProgramacao.Composicao.entities.ExFixOrderItem;
-import LogicaDeProgramacao.Composicao.entities.ExFixOrderStatus;
+import LogicaDeProgramacao.Composicao.entities.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -24,32 +21,39 @@ public class OrderApplication {
         System.out.print("Name: ");
         String name = sc.nextLine();
         System.out.print("Email: ");
-        String email = sc.nextLine();
-        System.out.println("Birth date (DD/MM/YYYY): ");
+        String email = sc.next();
+        System.out.print("Birth date (DD/MM/YYYY): ");
         Date birthDate = sdf.parse(sc.next());
-        ExFixClient order = new ExFixClient(name, email, birthDate);
+        ExFixClient client = new ExFixClient(name, email, birthDate);
 
         System.out.println("Enter order data:");
-        System.out.print("Status:");
-        ExFixOrderStatus status = ExFixOrderStatus.valueOf(sc.next());
+        System.out.print("Status: ");
+        ExFixOrderStatus status = ExFixOrderStatus.valueOf(sc.next()); //valueOf = converte o valor do meu String para meu tipo Enum
+
+        ExFixOrder order = new ExFixOrder(new Date(), status, client);
 
         System.out.print("How many items to this order? ");
         int n = sc.nextInt();
 
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             System.out.println("Enter #" + i + " item data:");
             System.out.print("Product name: ");
+            sc.nextLine();
             String productName = sc.nextLine();
             System.out.print("Product price: ");
             double price = sc.nextDouble();
             System.out.print("Quantity: ");
             int quantity = sc.nextInt();
 
+            ExFixProduct product = new ExFixProduct(productName, price);
+            ExFixOrderItem it = new ExFixOrderItem(quantity, price, product);
+
+            order.addItem(it);
         }
 
-
-
-
+        System.out.println();
+        System.out.println("ORDER SUMMARY:");
+        System.out.println(order.toString());
 
         sc.close();
     }

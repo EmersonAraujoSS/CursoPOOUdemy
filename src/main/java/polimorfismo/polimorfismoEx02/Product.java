@@ -1,4 +1,4 @@
-package polimorfismoEx02;
+package polimorfismo.polimorfismoEx02;
 
 public class Product {
 

@@ -8,7 +8,7 @@ public class ExFixOrderItem {
     private ExFixProduct product;
 
 
-    //CONSTRUTOR
+    //CONSTRUTORES
     public ExFixOrderItem(){
     }
 
@@ -18,9 +18,10 @@ public class ExFixOrderItem {
         this.product = product;
     }
 
+
     //MÉTODOS
     public double subTotal(){
-        return quantity * price;
+        return price * quantity;
     }
 
 
@@ -42,5 +43,14 @@ public class ExFixOrderItem {
     }
     public void setProduct(ExFixProduct product) {
         this.product = product;
+    }
+
+
+    @Override
+    public String toString() {
+        return product.getName() + ", "
+                + "$" + String.format("%.2f", price) + ", "
+                + "Quantity: " + quantity + ", "
+                + "Subtotal: " + String.format("%.2f", subTotal());
     }
 }

@@ -4,7 +4,7 @@ public class ExFixProduct {
 
     //ATRIBUTOS
     private String name;
-    private double price;
+    private Double price;
 
 
     //CONSTRUTORES
@@ -24,10 +24,10 @@ public class ExFixProduct {
     public void setName(String name) {
         this.name = name;
     }
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
-    public void setPrice(double price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 }

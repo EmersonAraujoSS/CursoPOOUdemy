@@ -1,8 +1,8 @@
-package polimorfismoEx04.application;
+package polimorfismo.polimorfismoEx04.application;
 
-import polimorfismoEx04.entities.Company;
-import polimorfismoEx04.entities.Individual;
-import polimorfismoEx04.entities.TaxPayer;
+import polimorfismo.polimorfismoEx04.entities.Company;
+import polimorfismo.polimorfismoEx04.entities.Individual;
+import polimorfismo.polimorfismoEx04.entities.TaxPayer;
 
 import java.util.ArrayList;
 import java.util.List;

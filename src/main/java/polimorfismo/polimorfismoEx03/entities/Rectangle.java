@@ -1,6 +1,6 @@
-package polimorfismoEx03.entities;
+package polimorfismo.polimorfismoEx03.entities;
 
-import polimorfismoEx03.enums.Color;
+import polimorfismo.polimorfismoEx03.enums.Color;
 
 public class Rectangle extends Shape{
 

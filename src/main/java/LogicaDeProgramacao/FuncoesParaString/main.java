@@ -31,6 +31,10 @@ public class main {
 
 
         //StringBuilder = serve para quando vc tiver que montar um string muito grande, a partir de vários pequenos, porque essa classe é otimizada para isso
+        //NO FINAL EU SÓ CONVERTO O StringBuilder PARA toString
+
         //append = append significa acrescentar no final
+
+        //valueOf = converte o valor do meu String para meu tipo Enum
     }
 }

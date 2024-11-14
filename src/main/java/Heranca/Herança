@@ -1,0 +1,34 @@
+Herança:
+    • É um tipo de associação que permite que uma classe herde todos dados e comportamentos de outra
+    • Definições importantes
+    • Vantagens
+    • Reuso
+    • Polimorfismo
+    -Sintaxe
+        • class A extends B
+
+
+Definições importantes:
+    • Relação "é-um"
+    • Generalização/especialização
+    • Superclasse (classe base) / subclasse (classe derivada)
+    • Herança / extensão
+    • Herança é uma associação entre classes (e não entre objetos)
+
+Checklist:
+    - Upcasting
+        • Casting da subclasse para superclasse
+        • Uso comum: polimorfismo
+
+    - Downcasting
+        • Casting da superclasse para subclasse
+        • Palavra instanceof
+        • Uso comum: métodos que recebem parâmetros genéricos (ex: Equals)
+
+
+Uso da palavra FINAL:
+    Pra quê?
+        • Segurança: dependendo das regras do negócio, às vezes é desejável garantir que uma classe não seja herdada, ou que um método não seja sobreposto.
+        • Geralmente convém acrescentar final em métodos sobrepostos, pois sobreposições múltiplas podem ser uma porta de entrada para inconsistências
+        • Performance: atributos de tipo de uma classe final são analisados de forma mais rápida em tempo de execução.
+        • Exemplo clássico: String (O String é uma classe Final)

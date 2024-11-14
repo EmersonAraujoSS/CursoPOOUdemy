@@ -1,4 +1,4 @@
-package polimorfismoEx02;
+package polimorfismo.polimorfismoEx02;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -29,7 +29,7 @@ public class ExecutavelExemplo {
             System.out.print("Price: "); // le o preco
             double price = sc.nextDouble(); // variavel para ler o preco
 
-            if (type == 'c') { //LEITURA DO IF = SE MEU TIPO FOR IGUAL A"
+            if (type == 'c') { //LEITURA DO IF = SE MEU TIPO FOR IGUAL A 'C'"
                 list.add(new Product(name, price));
             } else if (type == 'u') {
                 System.out.print("Data de fabricacao (DD/MM/YYYY): ");
