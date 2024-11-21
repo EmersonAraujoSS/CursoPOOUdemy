@@ -32,3 +32,7 @@ Uso da palavra FINAL:
         • Geralmente convém acrescentar final em métodos sobrepostos, pois sobreposições múltiplas podem ser uma porta de entrada para inconsistências
         • Performance: atributos de tipo de uma classe final são analisados de forma mais rápida em tempo de execução.
         • Exemplo clássico: String (O String é uma classe Final)
+
+Diferença fundamental
+    • Herança => reuso
+    • Interface => contrato a ser cumprido
