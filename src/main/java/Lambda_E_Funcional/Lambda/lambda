@@ -1,0 +1,18 @@
+Significado:
+    * Expressão anônima de primeira classe
+    * Interface Funcional
+        - Predicate
+        - Consumer
+        - Predicate
+
+
+Expressividade / código conciso
+    Integer sum = 0;
+    for (Integer x : list) {
+        sum += x;
+    }
+
+    vs.
+
+    Integer sum = list.stream().reduce(0, Integer::sum);
+

@@ -1,0 +1,7 @@
+Generics:
+    - Generics permitem que classes, interfaces e métodos possam ser parametrizados por tipo.
+        - Seus benefícios são:
+            • Reuso
+            • Type safety (refere-se a uma propriedade de uma linguagem de programação ou sistema que garante que os valores de dados sejam usados de maneira consistente com seus tipos declarados)
+            • Performance
+            • Uso comum: coleções

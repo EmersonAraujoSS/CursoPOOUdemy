@@ -1,0 +1,7 @@
+Generics são invariantes:
+    - List<Object> não é o supertipo de qualquer tipo de lista
+    - O supertipo de qualquer tipo de lista é List<?>. Este é um tipo curinga:
+    - Com tipos curinga podemos fazer métodos que recebem um genérico de "qualquer tipo"
+    - (IMPORTANTE):
+        - Porém não é possível adicionar dados a uma coleção de tipo curinga
+        - O compilador não sabe qual é o tipo específico do qual a lista foi instanciada
