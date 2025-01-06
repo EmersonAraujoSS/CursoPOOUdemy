@@ -31,18 +31,17 @@ public class testeExe {
 
             double media = list.stream()
                     .map(p -> p.getPrice())
-                    .reduce(0.0, (x,y) -> x + y / list.size());
+                    .reduce(0.0, (x,y) -> x + y) / list.size();//reduce vai me permitir fazer a soma
 
-            System.out.println("Preço medio: " + String.format("%.2f", media));
+            System.out.println("Preço médio: " + String.format("%.2f", media));
 
             Comparator<String> comp = (s1, s2) -> s1.toUpperCase().compareTo(s2.toUpperCase());
 
             List<String> names = list.stream()
-                    .filter(p -> p.getPrice() < media)
-                    .map(p -> p.getName())
-                    .sorted(comp.reversed())
-                    .collect(Collectors.toList());
-
+                     .filter(p -> p.getPrice() < media)
+                     .map(p -> p.getName())
+                     .sorted(comp.reversed())  //aqui eu estou usando o "sorted" para ele organizar por ordem alfabetica // e usei o "comp.reversed" para comparar e organizar em ordem decrescente.
+                     .collect(Collectors.toList());
 
             names.forEach(System.out::println);
         }
