@@ -5,7 +5,7 @@ Significado:
             ex: removeIf(Predicate
         - Consumer
             ex: foreach(Consumer)
-        - Predicate
+        - Function
             ex: map(Function)
 
 
