@@ -20,7 +20,7 @@ public class Program {
         list.add(new Product("Tablet", 350.50));
         list.add(new Product("HD Case", 80.90));
 
-       List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList()); //Map = a função Generics.Map ela pega uma coleção de valores e aplica a cada um dos valores da coleção
+       List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList()); //map = a função Generics.map ela pega uma coleção de valores e aplica a cada um dos valores da coleção
         //p -> p.getName().toUpperCase() = funcao lambda                                                            // a função que tiver entre parenteses nesse caso "UpperCaseName"
 
        names.forEach(System.out::println);

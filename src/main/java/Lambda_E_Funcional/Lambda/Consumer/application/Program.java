@@ -23,6 +23,6 @@ public class Program {
 
         list.forEach(p -> p.setPrice(p.getPrice() * factor));  // p.setPrice(p.getPrice() * factor =  Expressão lambda inline
 
-        list.forEach(System.out::println);
+        list.forEach(System.out::println); //foreach = exemplo de consumer
     }
 }

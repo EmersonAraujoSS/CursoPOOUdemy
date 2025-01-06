@@ -2,8 +2,11 @@ Significado:
     * Expressão anônima de primeira classe
     * Interface Funcional
         - Predicate
+            ex: removeIf(Predicate
         - Consumer
+            ex: foreach(Consumer)
         - Predicate
+            ex: map(Function)
 
 
 Expressividade / código conciso

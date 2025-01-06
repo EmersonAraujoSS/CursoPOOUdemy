@@ -10,7 +10,7 @@ public class Program {
 
         List<Integer> list = Arrays.asList(3,4,5,10,7);
 
-        Stream<Integer> st1 = list.stream().map(x -> x * 10); // Generics.Map = ele aplica uma função a cada elemento da minha Stream (minha função = x -> x * 10 )
+        Stream<Integer> st1 = list.stream().map(x -> x * 10); // Generics.map = ele aplica uma função a cada elemento da minha Stream (minha função = x -> x * 10 )
         System.out.println(Arrays.toString(st1.toArray()));
 
         Stream<String> st2 = Stream.of("Maria", "Alex", "Bob");  // Stream.of = serve para eu aplicar valores na Stream

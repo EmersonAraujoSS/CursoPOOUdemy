@@ -1,12 +1,8 @@
-package FuncaoQueRecebeFuncaoComoParametro.application;
-
-import FuncaoQueRecebeFuncaoComoParametro.entites.Product;
-import FuncaoQueRecebeFuncaoComoParametro.model.services.ProductService;
+package Lambda_E_Funcional.Lambda.funcaoQueRecebeFuncao;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.stream.Collectors;
 
 public class Program {
 
@@ -23,9 +19,7 @@ public class Program {
 
         ProductService ps = new ProductService();
 
-        double sum = ps.filteredSum(list, p -> p.getName().charAt(0) == 'T');
-
+        double sum = ps.filteredSum(list, p -> p.getPrice() < 100.0);
         System.out.println("Sum = " + String.format("%.2f", sum));
-
     }
 }
